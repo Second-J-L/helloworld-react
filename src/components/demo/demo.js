@@ -8,24 +8,24 @@ import React from 'react'
 import './demo.less'
 
 class Demo extends React.Component {
-    /**
-     * @desc 不用解释了吧，这是组件的构造函数
-     * @param {*} props 
-     */
-    constructor(props) {
-        super(props)
+  /**
+   * @desc 不用解释了吧，这是组件的构造函数
+   * @param {*} props 
+   */
+  constructor(props) {
+    super(props)
 
-        this.state = {}
-    }
+    this.state = {}
+  }
 
-    /**
-     * @desc 不用解释了吧，render函数
-     */
-    render() {
-        return (
-            <div>demo组件</div>
-        )
-    }
+  /**
+   * @desc 不用解释了吧，render函数
+   */
+  render() {
+    return (
+      <div>demo组件</div>
+    )
+  }
 }
 
 export default Demo

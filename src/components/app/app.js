@@ -14,22 +14,23 @@ class App extends React.Component {
      * @param {*} props 
      */
     constructor(props) {
-        super(props)
+      super(props)
 
-        this.state = {}
+      this.state = {}
     }
 
     /**
      * @desc 不用解释了吧，render函数
      */
     render() {
-        return (
-          <div>
-            <div>First</div>
-            <div onClick={(e) => {console.log(e)}}>First</div>
-            <Demo></Demo>
-          </div>
-        )
+      const title = '学习'
+      return (
+        <div>
+          <div>{ title }</div>
+          <div onClick={(e) => {console.log(e)}}>First</div>
+          <Demo></Demo>
+        </div>
+      )
     }
 }
 

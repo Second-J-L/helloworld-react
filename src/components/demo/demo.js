@@ -6,6 +6,7 @@
 
 import React from 'react'
 import './demo.less'
+import HttpClient from '../../api/http-client'
 
 class Demo extends React.Component {
   /**
@@ -18,6 +19,10 @@ class Demo extends React.Component {
     this.state = {}
   }
 
+  componentDidMount() {
+    HttpClient.getList({}, (rsp) => { console.log(rsp); });
+  }
+
   /**
    * @desc 不用解释了吧，render函数
    */
@@ -27,5 +32,6 @@ class Demo extends React.Component {
     )
   }
 }
+
 
 export default Demo

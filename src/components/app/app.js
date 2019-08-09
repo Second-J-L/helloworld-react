@@ -26,7 +26,7 @@ class App extends React.Component {
   render() {
     const title = '学习'
     return (
-      <div>
+      <div className="app">
         <div>{ title }</div>
         <div onClick={(e) => {console.log(e)}}>First</div>
         <Demo></Demo>

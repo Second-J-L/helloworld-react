@@ -6,7 +6,7 @@
 
 import React from 'react'
 import './app.less'
-import Demo from '../demo/demo'
+import Demo from '@components/demo/demo'
 
 
 class App extends React.Component {

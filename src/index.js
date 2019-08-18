@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.css';
-import App from './components/app/app';
+import App from '@pages/app/app';
 import * as serviceWorker from './serviceWorker';
 
 // 路由器

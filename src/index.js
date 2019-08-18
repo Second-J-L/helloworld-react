@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 // 路由器
 ReactDOM.render(<Router>
-                  <Route path="/" component={App}></Route>           
+                  <Route path="/" exact component={App}></Route>           
                 </Router>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

@@ -1,8 +1,14 @@
-/**
- * @desc http请求客户端
- * @author 
- * @created 2019-07-30 
- */
+/***************************************************************************************
+ * Copyright           : 2019 - 2020
+ * FileName            : http-client.js
+ * Author              : Hello 前端俱乐部 https://blog.shuipingguo.com/
+ * Version             :
+ * Date Of Creation    : 2019-07-30 10:30:00
+ * Description         : http请求客户端
+ *                     :
+ *                     :
+ * Function List       :
+ **************************************************************************************/
 
 import axios from 'axios';
 import { apiBaseUrl } from './http-config'

@@ -1,8 +1,14 @@
-/**
- * @desc 这是一个demo组件，包括了一个组件的最基本元素
- * @author 
- * @created 2019-07-29 
- */
+/***************************************************************************************
+ * Copyright           : 2019 - 2020
+ * FileName            : demo.js
+ * Author              : Hello 前端俱乐部 https://blog.shuipingguo.com/
+ * Version             :
+ * Date Of Creation    : 2019-07-29 10:30:00
+ * Description         : 这是一个demo组件，包括了一个组件的最基本元素
+ *                     :
+ *                     :
+ * Function List       :
+ **************************************************************************************/
 
 import React from 'react'
 import './demo.less'
@@ -20,7 +26,7 @@ class Demo extends React.Component {
   }
 
   componentDidMount() {
-    HttpClient.getList({}, (rsp) => { console.log(rsp); });
+    // HttpClient.getList({}, (rsp) => { console.log(rsp); });
   }
 
   /**
@@ -28,7 +34,7 @@ class Demo extends React.Component {
    */
   render() {
     return (
-      <div>demo组件</div>
+      <div className="demo">蓝色框内区域是 Demo组件</div>
     )
   }
 }

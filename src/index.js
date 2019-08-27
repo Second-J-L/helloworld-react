@@ -1,14 +1,23 @@
+/***************************************************************************************
+ * Copyright           : 2019 - 2020
+ * FileName            : index.js
+ * Author              : Hello 前端俱乐部 https://blog.shuipingguo.com/
+ * Version             :
+ * Date Of Creation    : 2019/01/01 13:30:00
+ * Description         : react 脚手架入口 js
+ *                     :
+ *                     :
+ * Function List       :
+ **************************************************************************************/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.css';
-import App from '@pages/app/app';
+import Routes from './routes'
 import * as serviceWorker from './serviceWorker';
 
 // 路由器
-ReactDOM.render(<Router>
-                  <Route path="/" exact component={App}></Route>           
-                </Router>, document.getElementById('root'));
+ReactDOM.render(<Routes />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

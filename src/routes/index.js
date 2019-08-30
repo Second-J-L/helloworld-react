@@ -10,9 +10,9 @@
  * Function List       :
  **************************************************************************************/
 
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import App from '@pages/app/app';
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import App from '@pages/app/app'
 import RoutePage from '@pages/route-page/route-page'
 
 class Routes extends React.Component {

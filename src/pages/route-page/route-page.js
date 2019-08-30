@@ -36,4 +36,4 @@ class RoutePage extends React.Component {
 }
 
 
-export default RoutePage;
+export default RoutePage

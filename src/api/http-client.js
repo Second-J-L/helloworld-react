@@ -10,12 +10,12 @@
  * Function List       :
  **************************************************************************************/
 
-import axios from 'axios';
+import axios from 'axios'
 import { apiBaseUrl } from './http-config'
 
 const urlMap = {
   getList: apiBaseUrl + '/list1/?tag=__all__&ac=wap&count=20&format=json_raw&as=A1E50A442CBAAEF&cp=5A4C8A0A5EEFDE1&min_behot_time=0'
-};
+}
 
 const HttpClient = {
   getList: (options) => {
@@ -23,8 +23,8 @@ const HttpClient = {
       .get(urlMap.getList, {params: options.params})
         .then(function (response) { options.callback && options.callback(response); })
         .catch(function (error) { options.failcallback && options.failcallback(error); })
-        .then(function () { });  
+        .then(function () { }) 
   }
-};
+}
 
-export default HttpClient;
+export default HttpClient

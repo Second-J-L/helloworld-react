@@ -11,6 +11,7 @@
  **************************************************************************************/
 
 import React from 'react'
+import { connect } from 'react-redux'
 import './route-page.less'
 
 
@@ -30,10 +31,20 @@ class RoutePage extends React.Component {
    */
   render() {
     return (
-      <div className="route-page">这是route跳转后的落地页面</div>
+      <div className="route-page">
+        <div>这是route跳转后的落地页面</div>
+        <div>{ this.props.id }</div>
+      </div>
     )
   }
 }
 
+const mapStateToProps = state => {
+  console.log('[route-page] mapStateToProp')
+  console.log(state)
+  const id = state.oneReducer.id
 
-export default RoutePage
+  return { id }
+}
+
+export default connect(mapStateToProps)(RoutePage)

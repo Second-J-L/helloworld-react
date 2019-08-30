@@ -11,8 +11,10 @@
  **************************************************************************************/
 
 import React from 'react'
+import { connect } from 'react-redux'
 import './demo.less'
-import HttpClient from '../../api/http-client'
+// import HttpClient from '../../api/http-client'
+import { addOne } from '@redux/actions'
 
 class Demo extends React.Component {
   /**
@@ -29,15 +31,26 @@ class Demo extends React.Component {
     // HttpClient.getList({}, (rsp) => { console.log(rsp); });
   }
 
+  dispatchReduxAction = () => {
+    console.log('[demo] dispatchReduxAction');
+    this.props.addOne(6)
+  }
+
   /**
    * @desc 不用解释了吧，render函数
    */
   render() {
     return (
-      <div className="demo">蓝色框内区域是 Demo组件</div>
+      <div className="demo">
+        <div>蓝色框内区域是 Demo组件</div>
+        <div onClick={ this.dispatchReduxAction.bind(this) } className="button">Redux dispatch</div>
+      </div>
     )
   }
 }
 
 
-export default Demo
+export default connect(
+  null,
+  { addOne }
+)(Demo)
